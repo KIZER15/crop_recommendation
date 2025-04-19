@@ -1,3 +1,4 @@
+from flask_cors import CORS
 from flask import Flask, request, jsonify
 import joblib
 import numpy as np
@@ -6,6 +7,7 @@ import os
 import google.generativeai as genai
 
 app = Flask(__name__)
+CORS(app)  # 🔥 And this line enables CORS for all routes
 
 # Load ML model and data
 model = joblib.load("crop_prob_model.pkl")
