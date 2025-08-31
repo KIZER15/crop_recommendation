@@ -15,7 +15,7 @@ label_mapping = joblib.load("crop_label_mapping.pkl")
 fertilizer_df = pd.read_csv("fertilizer.csv").set_index("Crop")
 
 # Gemini config
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDD8QW1BggDVVMLteDygHCHrD6Ff9Dy0e8"
+os.environ["GOOGLE_API_KEY"] = "AIzaSyDrPnuKNCWqY7n2HqDVlyl8B-JQNitiod0"
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 
